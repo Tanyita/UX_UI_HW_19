@@ -7,6 +7,8 @@
     <title>Tanja Milutinovic Portfolio</title>
 
 
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap' rel='stylesheet'>
@@ -14,7 +16,7 @@
     <link href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,900&display=swap' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap' rel='stylesheet'>
     <link rel='stylesheet' href='css/style.css' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 
 
 
@@ -23,75 +25,23 @@
 
     <nav class="navigation">
         <div class="navigationbar">
-            <div class="dots">
+            <ol>
                 <img src="images/Ellipse 89.png">
                 <img src="images/Ellipse 88.png">
                 <img src="images/Ellipse 87.png">
-            </div>
-
-            <div class="topnav" id="myTopnav">
-                <a href="#work" class="active">WORK ||</a>
-                <a href="#about">ABOUT ||</a>
-                <a href="#resume">RESUME ||</a>
-                <a href="#contact">CONTACT ||</a>
-                <div class="dropdown">
-                    <button class="dropbtn"> <a href="#more">MORE ||</a>
-                    <!-- <i class="fa fa-caret-down"></i> -->
-                  </button>
-                    <div class="dropdown-content">
-                        <a href="#">ADDITIONAL WORK</a>
-                        <a href="#">MORE ABOUT ME</a>
-                        <a href="#">VOLONTERING WORK </a>
-                    </div>
-                </div>
-
-                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-            </div>
-
-
-
-
-
-
-
-
-            <!-- <li>
-                    <img src="images/Ellipse 89.png">
-                    <img src="images/Ellipse 88.png">
-                    <img src="images/Ellipse 87.png">
-
-                </li> -->
-            <!-- <li><a href="#home">WORK |</a></li>
-                <li><a href="#home">ABOUT ||</a></li>
-                <li><a href="#news">CONTACT |||</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">MORE INFO ||||</a>
-                    <div class="dropdown-content">
-                        <a href="#">OTHER WORK</a>
-                        <a href="#">ILLUSTRATIONS</a>
-                        <a href="#">MORE ABOUT ME </a>
-                    </div>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a> -->
-            <!-- </li>
-                <input type="text" placeholder="SEARCH..">
-            </ul> -->
-            <!-- <ol>
-                <img src="images/Ellipse 89.png">
-                <img src="images/Ellipse 88.png">
-                <img src="images/Ellipse 87.png">
-                <a href='#work'>WORK</a> |
+                <a href="#work">WORK</a> ||
                 <a href='#about'>ABOUT</a> ||
-                <a href='#contact'>CONTACT</a> |||
-                <a href='#more'>MORE INFO </a> ||||
+                <a href='#resume'>RESUME</a> ||
+                <a href='#contact'>CONTACT</a> ||
+                <a href='#more'>MORE INFO  </a> ||
+
+                <input type="text" placeholder="SEARCH..">
 
 
-            </ol> -->
-
-
+            </ol>
         </div>
     </nav>
+
 </head>
 
 <body>
@@ -102,7 +52,6 @@
             <div class="background">
                 <img src="images/sculpture1.png" alt="Nika" class="sculpture">
                 <img src="images/backgroundhero.png" class="nika">
-
             </div>
             <div class="text">
                 <h1>HEY<br>I AM TANYA</h1>
@@ -116,7 +65,9 @@
 
     <section class="work">
         <div class="section-name">
-            <h2>WORK</h2>
+            <a id="work">
+                <h2>WORK</h2>
+            </a>
             <img class="WaveImage" src="images/Vector.png">
         </div>
         </div>
@@ -129,7 +80,7 @@
             </div>
             <div class="grid-item2">
 
-                <img src="images/palo_alto.png" class="pictureresponsive">
+                <img src="images/palo_alto.png" class="responsive">
             </div>
 
             <div class="grid-item3">
@@ -139,7 +90,7 @@
                 <button class="button" style="vertical-align:middle"><span>VIEW CASE STUDY </span></button>
             </div>
             <div class="grid-item4">
-                <img src="images/CFGI.png" class="pictureresponsive">
+                <img src="images/CFGI.png" class="responsive">
             </div>
         </div>
 
@@ -149,7 +100,9 @@
     <section class="about">
 
         <div class="section-name">
-            <h2>ABOUT ME</h2>
+            <a id="about">
+                <h2>ABOUT ME</h2>
+            </a>
             <img class="WaveImage" src="images/Vector.png">
         </div>
         <div img src="images/Gradiant.png" class="backgroundimage">
@@ -166,11 +119,14 @@
                 <div class=button>CONTACT</div>
             </div>
             <div class="right">
-                <img src="images/newme.png" class="pictureresponsive">
+                <img src="images/newme.png" class="responsive">
             </div>
         </div>
 
     </section>
+
+
+
 
     <footer>
 
@@ -178,24 +134,27 @@
         <div class="footer">
 
             <div class="footerall">
-                <img src="images/footernew.png" id="pink">
 
+                <img src="images/footernew.png" id="pink">
 
                 <div id="footer-muse"> </div>
 
                 <div id="footer-content">
                     <div class="columns">
                         <ol>
-                            <a href='#work'>WORK</a> |
-                            <a href='#about'>ABOUT</a> |
-                            <a href='#contact'>CONTACT</a> |||
-                            <a href='#more'>MORE</a> ||||
-                            <a href='#info'>INFO</a> |||||
+                            <a href='#work'>WORK</a> ||
+                            <a href='#about'>ABOUT</a> ||
+                            <a href='#resume'>RESUME</a> ||
+                            <a href='#contact'>CONTACT</a> ||
+                            <a href='#info'>MORE</a> ||
 
                         </ol>
                     </div>
                     <div>
-                        <img class="line" src="images/line.png">
+
+                        <div class="item" data-aos="zoom-in" aos-duration="500">
+                            <img class="line" src="images/bigdots.png">
+                        </div>
                     </div>
                     <div class="email">
                         <h7> GET IN TOUCH : tanja.milutinovic@gmail.com
@@ -203,17 +162,24 @@
                     </div>
                 </div>
 
-
-
                 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-
                 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
                 <script src="index.js"></script>
             </div>
         </div>
     </footer>
+
 </body>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.3.1.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="index.js"></script>
 
 </html>
 
