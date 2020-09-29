@@ -10,16 +10,20 @@ function scrollFunction() {
     }
 }
 
+
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+$("a[href$='more info']").on("click", function() {
+    $("#dropDown").slideToggle();
+});
 
-
-
-// $document.ready(function() {
-//     $("#footer-muse").click(function() {
-//         $("#footer-muse img.").toggleClass("transparent");
-//         // animation-play-state: paused;
-//     });
-// });
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
