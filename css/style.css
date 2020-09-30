@@ -109,13 +109,14 @@ input {
     font: 400 13.3333px Montserrat;
 }
 
-.navigationbar {
-    align-items: center;
+ul {
+    margin-left: 10vw;
 }
 
-ol {
+
+/* ol {
     margin-left: 4vw;
-}
+} */
 
 .sculpture {
     position: absolute;
@@ -261,7 +262,7 @@ ol {
 .email {
     text-align: left;
     position: relative;
-    margin-left: 35vw;
+    margin-left: 33vw;
     bottom: 0vw;
     font-size: 1.25vw;
     padding: 1.25vw;
@@ -388,6 +389,15 @@ ol {
         font-size: 2vh;
         color: #366EFF;
     }
+    /* ol {
+        margin-left: 1vw;
+    } */
+    a img {
+        width: 10px;
+    }
+    /* ol {
+        position: absolute;
+    } */
 }
 
 html {
