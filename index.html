@@ -23,7 +23,7 @@
     <title>Tanja Milutinovic Portfolio</title>
 
 
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap' rel='stylesheet'>
@@ -87,7 +87,9 @@
             <a id="work">
                 <h2>WORK</h2>
             </a>
-            <img class="WaveImage" src="images/Vector.png">
+            <div class="item" data-aos="fade-left">
+                <img class="WaveImage" src="images/Vector.png">
+            </div>
         </div>
         </div>
         <div class="grid-container">
@@ -120,7 +122,10 @@
             <a id="about">
                 <h2>ABOUT ME</h2>
             </a>
-            <img class="WaveImage" src="images/Vector.png">
+            <div class="item" data-aos="fade-left">
+                <img class="WaveImage" src="images/Vector.png">
+            </div>
+        </div>
         </div>
         <div img src="images/Gradiant.png" class="backgroundimage">
         </div>
@@ -146,17 +151,18 @@
 
 
     <footer>
+
         <div class="footer">
 
+            <img src="images/footernew.png" id="pink">
+
             <div class="footerall">
-
-                <img src="images/footernew.png" id="pink">
-
                 <div id="footer-muse">
-
                 </div>
-
                 <div id="footer-content">
+                    <div class="item" data-aos="zoom-in" aos-duration="400">
+                        <img class="line" src="images/bigdots.png">
+                    </div>
                     <div class="columns">
                         <ol>
                             <a href='#work'>WORK</a> ||
@@ -167,12 +173,6 @@
 
                         </ol>
                     </div>
-                    <div>
-
-                        <div class="item" data-aos="zoom-in" aos-duration="400">
-                            <img class="line" src="images/bigdots.png">
-                        </div>
-                    </div>
 
                     <div class="email">
                         <a id="contact">
@@ -180,13 +180,18 @@
                             </h7>
                         </a>
                     </div>
+                    <div class="item" data-aos="zoom-in" aos-duration="400">
+                        <img class="line" src="images/bigdots.png">
+                    </div>
                 </div>
-                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-                <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-                <script src="index.js"></script>
             </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+            <script src="index.js"></script>
         </div>
+
     </footer>
+
 
 </body>
 

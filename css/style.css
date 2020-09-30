@@ -87,7 +87,7 @@ nav {
 }
 
 a {
-    margin-left: 3vh;
+    /* margin-left: 3vh; */
     color: rgb(28, 28, 33);
     text-decoration: none;
 }
@@ -116,13 +116,9 @@ input {
     font: 400 13.3333px Montserrat;
 }
 
-ul {
-    margin-left: 10vw;
-}
 
-
-/* ol {
-    margin-left: 4vw;
+/* ul {
+    margin-left: 10vh;
 } */
 
 .sculpture {
@@ -141,10 +137,15 @@ ul {
     margin-left: 7vw;
 }
 
+#about {
+    float: left;
+}
+
 .WaveImage {
-    width: 50%;
+    width: 120%;
     float: right;
     display: flex;
+    float: left;
 }
 
 .button {
@@ -213,7 +214,7 @@ ul {
 
 #footer-muse {
     top: 10vw;
-    left: 15vw;
+    left: 20vw;
     position: relative;
     height: 20vw;
     padding: 2vw 7vw;
@@ -251,9 +252,14 @@ ul {
     }
 }
 
+.footerall {
+    /* display: flex; */
+    position: relative;
+}
+
 .columns {
     position: relative;
-    margin-left: 28vw;
+    margin-left: 31.6vw;
     width: 60vw;
     padding: 1.25vw;
     font-size: 1.25vw;
@@ -262,14 +268,14 @@ ul {
 .line {
     position: relative;
     margin-left: 35vw;
-    width: 50vw;
+    width: 30vw;
     padding: 1.25vw;
 }
 
 .email {
     text-align: left;
     position: relative;
-    margin-left: 33vw;
+    margin-left: 35vw;
     bottom: 0vw;
     font-size: 1.25vw;
     padding: 1.25vw;
@@ -281,8 +287,9 @@ ul {
 
 #footer-content {
     position: relative;
-    margin-right: 5vw;
-    bottom: 8vw;
+    /* display: flex; */
+    /* margin-right: 5vh; */
+    bottom: 13vh;
 }
 
 .footer {
@@ -396,17 +403,26 @@ ul {
         font-size: 2vh;
         color: #366EFF;
     }
-    /* ol {
-        margin-left: 1vw;
-    } */
     a img {
         width: 10px;
     }
-    /* ol {
-        position: absolute;
-    } */
+    .WaveImage {
+        width: 50%;
+        float: right;
+        display: flex;
+        float: left;
+    }
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 1000px) {
+    .WaveImage {
+        width: 50%;
+        float: right;
+        display: flex;
+        float: left;
+    }
 }

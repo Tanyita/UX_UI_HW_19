@@ -56,5 +56,5 @@ $('a[href*="#"]')
 
 
 AOS.init({
-    duration: 1000,
+    duration: 1300,
 })
