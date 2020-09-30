@@ -97,7 +97,7 @@ a:hover {
 }
 
 p {
-    font-size: 1vw;
+    font-size: 2vw;
     margin-block-start: 0.5em;
     margin-block-end: 2em;
     margin-inline-start: 0px;
@@ -169,7 +169,7 @@ input {
 
 .grid-container {
     display: grid;
-    grid-template-areas: "grid-item1" "grid-item2" "grid-item3" "grid-item4";
+    grid-template-areas: "grid-item2" "grid-item1" "grid-item4" "grid-item3";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-start: 1;
@@ -192,7 +192,7 @@ input {
 #aboutme {
     display: grid;
     grid-template-columns: 40% auto;
-    grid-gap: 10vw;
+    /* grid-gap: 10vw; */
     align-content: center;
     justify-content: flex-start;
     margin-bottom: 10vw;
@@ -252,18 +252,14 @@ input {
     }
 }
 
-.footerall {
-    /* display: flex; */
-    position: relative;
-}
 
-.columns {
+/* .columns {
     position: relative;
     margin-left: 31.6vw;
     width: 60vw;
     padding: 1.25vw;
     font-size: 1.25vw;
-}
+} */
 
 .line {
     position: relative;
@@ -312,11 +308,6 @@ input {
     z-index: -1;
 }
 
-#vectordots {
-    margin-left: 10vw;
-    bottom: 3vw;
-}
-
 #myBtn {
     display: none;
     position: fixed;
@@ -331,7 +322,6 @@ input {
     cursor: pointer;
     padding: 1vw 2vw;
     border-radius: 9px;
-    /* margin-right: 2vw; */
 }
 
 #myBtn:hover {
@@ -375,6 +365,14 @@ input {
         color: rgb(28, 28, 33);
         ;
     }
+    .section-name {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin-top: 7vw;
+        margin-bottom: 3vw;
+        margin-left: 7vw;
+    }
     #aboutme {
         display: grid;
         grid-template-columns: auto;
@@ -409,8 +407,29 @@ input {
     .WaveImage {
         width: 50%;
         float: right;
-        display: flex;
-        float: left;
+        /* display: flex; */
+        /* float: left; */
+    }
+    /* .columns {
+        position: relative;
+        margin-left: 28vw;
+        width: 60vw;
+        padding: 1.25vw;
+        font-size: 1.25vw;
+    } */
+    .email {
+        position: relative;
+        margin-left: 35vw;
+        bottom: 0vw;
+        font-size: 1.25vw;
+        padding: 1.25vw;
+    }
+    .email:hover {
+        font-weight: bolder;
+    }
+    #footer-content {
+        position: sticky;
+        bottom: 7vh;
     }
 }
 
@@ -423,6 +442,16 @@ html {
         width: 50%;
         float: right;
         display: flex;
-        float: left;
+        /* float: left; */
+    }
+    #aboutme {
+        /* display: grid; */
+        /* grid-template-columns: auto; */
+        align-content: center;
+        justify-content: flex-start;
+        margin-bottom: 10vw;
+        vertical-align: middle;
+        margin-left: 7vw;
+        margin-right: 5vw;
     }
 }
